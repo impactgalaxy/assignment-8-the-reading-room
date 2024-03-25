@@ -36,6 +36,16 @@ export function StickyNavbar() {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
+                <NavLink to="/all-books" className="flex items-center">
+                    All Books
+                </NavLink>
+            </Typography>
+            <Typography
+                as="li"
+                variant="small"
+                color="blue-gray"
+                className="p-1 font-normal"
+            >
                 <NavLink to="/listed-books" className="flex items-center">
                     Listed Books
                 </NavLink>

@@ -7,8 +7,13 @@ export default function Books() {
     const [spinner, setSpinner] = useState(false);
 
     useEffect(() => {
-        fetch("/booksData.json").then(res => res.json()).then(data => setBooks(data));
-        setSpinner(true);
+        fetch("/booksData.json")
+            .then(res => res.json())
+            .then(data => {
+                setBooks(data);
+                setSpinner(true);
+            });
+
 
     }, [])
     return (
