@@ -1,0 +1,99 @@
+[
+    {
+        "bookId": 1,
+        "bookName": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "image": "https://i.ibb.co/6w111Nh/daria-nepriakhina-x-Y55b-L5m-ZAM-unsplash.jpg",
+        "review": "F. Scott Fitzgerald's 'The Great Gatsby' offers a poignant portrayal of the Jazz Age, delving beneath its glittering façade to reveal the emptiness and disillusionment lurking beneath. Through the eyes of narrator Nick Carraway, readers are drawn into the world of Jay Gatsby, a man of mystery and ambition, and Daisy Buchanan, his unattainable love. The novel explores themes of love, wealth, and the American Dream with exquisite prose and vivid imagery. Fitzgerald's masterful storytelling captures the essence of an era marked by excess and longing, leaving a lasting impression on generations of readers.",
+        "totalPages": 180,
+        "rating": 4.5,
+        "category": "Classic Literature",
+        "tags": [
+            "Romance",
+            "Drama",
+            "1920s"
+        ],
+        "publisher": "Charles Scribner's Sons",
+        "yearOfPublishing": 1925
+    },
+    {
+        "bookId": 2,
+        "bookName": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "image": "https://i.ibb.co/kKCWwcp/nathan-dumlao-LPRr-EJU2-Gb-Q-unsplash.jpg",
+        "review": "Harper Lee's 'To Kill a Mockingbird' is a timeless masterpiece that confronts the deep-rooted prejudices and injustices prevalent in the American South. Set in the 1930s, the novel follows the moral awakening of young Scout Finch as she witnesses her father, Atticus Finch, defend an innocent black man accused of raping a white woman. Through Scout's innocent perspective, Lee tackles complex themes of racial inequality, empathy, and the loss of innocence. With its compelling narrative and unforgettable characters, 'To Kill a Mockingbird' remains a powerful indictment of social injustice and a testament to the enduring power of compassion.",
+        "totalPages": 281,
+        "rating": 4.8,
+        "category": "Fiction",
+        "tags": [
+            "Legal Drama",
+            "Coming-of-age"
+        ],
+        "publisher": "J.B. Lippincott & Co.",
+        "yearOfPublishing": 1960
+    },
+    {
+        "bookId": 3,
+        "bookName": "1984",
+        "author": "George Orwell",
+        "image": "https://i.ibb.co/f1CG7Z6/julia-kicova-g827-ZOCwt30-unsplash.jpg",
+        "review": "George Orwell's '1984' presents a chilling dystopian vision of a totalitarian regime where individuality is suppressed, and truth is distorted by those in power. Set in a future world of perpetual war and omnipresent surveillance, the novel follows Winston Smith, a disillusioned member of the Party who dares to rebel against its oppressive rule. Through Winston's struggle for freedom and truth, Orwell explores the dangers of authoritarianism and the manipulation of language and reality. '1984' remains a haunting warning against the erosion of civil liberties and the perversion of truth in the pursuit of absolute power.",
+        "totalPages": 328,
+        "rating": 4.7,
+        "category": "Science Fiction",
+        "tags": [
+            "Dystopia",
+            "Political"
+        ],
+        "publisher": "Secker & Warburg",
+        "yearOfPublishing": 1949
+    },
+    {
+        "bookId": 4,
+        "bookName": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "image": "https://i.ibb.co/QH8fFCC/alif-caesar-rizqi-pratama-lo-Ul-SOXL81c-unsplash.jpg",
+        "review": "J.D. Salinger's 'The Catcher in the Rye' is an iconic coming-of-age novel that captures the angst and alienation of adolescence with unparalleled authenticity. Narrated by the irreverent and introspective Holden Caulfield, the novel follows his journey through New York City after being expelled from prep school. Through Holden's cynical observations and internal turmoil, Salinger explores themes of identity, belonging, and the loss of innocence. 'The Catcher in the Rye' remains a poignant portrayal of youthful disillusionment and the search for authenticity, resonating with readers across generations with its raw honesty and emotional depth.",
+        "totalPages": 277,
+        "rating": 4.4,
+        "category": "Fiction",
+        "tags": [
+            "Coming-of-age",
+            "Rebellion"
+        ],
+        "publisher": "Little, Brown and Company",
+        "yearOfPublishing": 1951
+    },
+    {
+        "bookId": 5,
+        "bookName": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "image": "https://i.ibb.co/Bgf0GD2/sincerely-media-Dg-Qf1d-UKUTM-unsplash.jpg",
+        "review": "Jane Austen's 'Pride and Prejudice' is a delightful comedy of manners that continues to captivate readers with its wit, charm, and timeless romance. Set in early 19th-century England, the novel follows the spirited Elizabeth Bennet as she navigates the intricate social hierarchy of her time. Along the way, she encounters the enigmatic Mr. Darcy, whose pride and her own prejudice initially keep them apart. Through sparkling dialogue and astute social commentary, Austen explores themes of love, class, and the pursuit of happiness. 'Pride and Prejudice' remains a beloved classic, enchanting readers with its endearing characters and enduring themes.",
+        "totalPages": 279,
+        "rating": 4.6,
+        "category": "Classic Literature",
+        "tags": [
+            "Romance",
+            "Satire"
+        ],
+        "publisher": "T. Egerton, Whitehall",
+        "yearOfPublishing": 1813
+    },
+    {
+        "bookId": 6,
+        "bookName": "Harry Potter and the Philosopher's Stone",
+        "author": "J.K. Rowling",
+        "image": "https://i.ibb.co/FBsDCwv/dollar-gill-0-V7-N62z-Zc-U-unsplash.jpg",
+        "review": "J.K. Rowling's 'Harry Potter and the Philosopher's Stone' casts a spellbinding enchantment on readers, introducing them to a magical world brimming with wonder, adventure, and friendship. Follow young Harry Potter as he discovers his true identity as a wizard and embarks on a journey to Hogwarts School of Witchcraft and Wizardry. Alongside his loyal friends Ron and Hermione, Harry uncovers the mysteries of his past and confronts the dark forces threatening the wizarding world. With its captivating storytelling and richly imagined universe, 'Harry Potter and the Philosopher's Stone' is a spellbinding tale that continues to inspire readers of all ages.",
+        "totalPages": 309,
+        "rating": 4.9,
+        "category": "Fantasy",
+        "tags": [
+            "Magic",
+            "Friendship"
+        ],
+        "publisher": "Bloomsbury",
+        "yearOfPublishing": 1997
+    }
+]

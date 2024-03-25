@@ -6,7 +6,12 @@ module.exports = withMT({
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-pattern': "url('https://i.ibb.co/c2bQ3vK/jaredd-craig-HH4-WBGNyltc-unsplash.jpg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      }
+    },
   },
   plugins: [require("daisyui")],
 });
