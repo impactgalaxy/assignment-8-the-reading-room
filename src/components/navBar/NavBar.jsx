@@ -46,7 +46,7 @@ export function StickyNavbar() {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
-                <NavLink to="/listed-books" className="flex items-center">
+                <NavLink to="/listed-books" className={`flex items-center ${({ isActive }) => isActive ? "text-green-600" : ""}`}>
                     Listed Books
                 </NavLink>
             </Typography>
