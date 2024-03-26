@@ -17,7 +17,6 @@ export default function BookReviews() {
         <div>
             {
                 data.map(element => <BookReview key={element.bookId} books={element}></BookReview>)
-
             }
         </div>
     );

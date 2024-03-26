@@ -11,8 +11,8 @@ import {
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 export default function Book({ books }) {
-    const { bookName, image, author, category, rating, tags, bookId } = books;
-    const card = <Card className="w-full max-w-[26rem] shadow-lg flex flex-col cursor-pointer" >
+    const { bookName, image, author, category, rating, tags, bookId } = books || {};
+    const card = <Card >
         <CardHeader floated={false} color="blue-gray " className="flex-grow">
             <img
                 src={image}
@@ -68,7 +68,7 @@ export default function Book({ books }) {
     </Card>
 
     return (
-        <Link to={`/all-books/${bookId}`}>{card}</Link>
+        <Link className="w-full max-w-[26rem] shadow-lg flex flex-col cursor-pointer" to={`/all-books/${bookId}`}>{card}</Link>
 
     );
 }

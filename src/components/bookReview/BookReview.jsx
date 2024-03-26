@@ -4,11 +4,15 @@ import {
     Button,
 } from "@material-tailwind/react";
 import PropTypes from "prop-types";
-
+import { saveDataToLS } from "../../utility/Utility";
 export function BookReview({ books }) {
-    const { image, bookName, author, review, category, tags, totalPages, publisher, yearOfPublishing, rating } = books || {};
+    const { image, bookName, author, review, category, tags, totalPages, publisher, yearOfPublishing, rating, id } = books || {};
+
+    const handleRead = () => {
+        saveDataToLS(parseInt(id));
+    }
     return (
-        <Card className="flex flex-col lg:flex-row container m-auto p-4 lg:p-10 lg:*:w-1/2 h-screen">
+        <Card className="flex flex-col lg:flex-row container m-auto p-4 lg:p-10 lg:*:w-1/2">
             <div
 
                 className="m-0 rounded-xl w-full"
@@ -29,7 +33,7 @@ export function BookReview({ books }) {
                 <Typography className="my-2 border-y py-4">
                     {category}
                 </Typography>
-                <Typography color="gray" className="font-normal">
+                <Typography color="gray" className="font-normal flex-grow">
                     <span className="text-black font-bold">Review:</span> {review}
                 </Typography>
                 <div className="flex gap-3 border-b py-4">
@@ -53,7 +57,7 @@ export function BookReview({ books }) {
 
                 </div>
                 <div className="flex gap-4 ">
-                    <Button variant="text" color="amber" className="flex items-center gap-2">
+                    <Button onClick={handleRead} variant="outlined" color="green" className="flex items-center gap-2">
                         Read
                     </Button>
                     <Button variant="filled" color="blue" className="flex items-center gap-2">
