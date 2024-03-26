@@ -18,14 +18,16 @@ const saveDataToLS = (id, toast) => {
     }
 }
 const saveDataToLSByWishlist = (id, toast) => {
+    const readingData = getDataFromLS();
+    const isRead = readingData.includes(id);
     const data = getDataFromLSByWishlist();
     const isExist = data.includes(id);
-    if (!isExist) {
+    if (!isExist && !isRead) {
         data.push(id);
         localStorage.setItem("wishlist", JSON.stringify(data));
         toast.success("Your book added in Wishlist");
     } else {
-        toast.error("Sorry! You already been added");
+        toast.error("Sorry! You already been read");
     }
 }
 export { getDataFromLS, saveDataToLS, saveDataToLSByWishlist, getDataFromLSByWishlist };

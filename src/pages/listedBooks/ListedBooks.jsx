@@ -4,7 +4,6 @@ import { getDataFromLS, getDataFromLSByWishlist } from "../../utility/Utility";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import ReadingData from "../../components/readingData/ReadingData";
-// import WishlistData from "../../components/wishData/WishlistData";
 
 export default function ListedBooks() {
     const [readData, setReadData] = useState([]);
@@ -64,7 +63,7 @@ export default function ListedBooks() {
             </div>
             <div className="lg:w-1/2 m-auto p-4 lg:p-8 border flex items-center justify-center  rounded-2xl">
                 <select className="lg:w-1/3 p-3" onChange={handleFilter}>
-                    <option value="null" aria-checked>Filter By</option>
+                    <option>Filter By</option>
                     <option value="all">All</option>
                     <option value="rating">Rating</option>
                     <option value="page">Pages</option>
