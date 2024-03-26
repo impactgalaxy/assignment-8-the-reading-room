@@ -34,8 +34,8 @@
     },
     {
         "bookId": 3,
-        "bookName": "1984",
-        "author": "George Orwell",
+        "bookName": "The Da Vinci Code",
+        "author": "Dan Brown",
         "image": "https://i.ibb.co/f1CG7Z6/julia-kicova-g827-ZOCwt30-unsplash.jpg",
         "review": "George Orwell's '1984' presents a chilling dystopian vision of a totalitarian regime where individuality is suppressed, and truth is distorted by those in power. Set in a future world of perpetual war and omnipresent surveillance, the novel follows Winston Smith, a disillusioned member of the Party who dares to rebel against its oppressive rule. Through Winston's struggle for freedom and truth, Orwell explores the dangers of authoritarianism and the manipulation of language and reality. '1984' remains a haunting warning against the erosion of civil liberties and the perversion of truth in the pursuit of absolute power.",
         "totalPages": 328,
