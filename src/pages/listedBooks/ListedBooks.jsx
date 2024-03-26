@@ -31,7 +31,6 @@ export default function ListedBooks() {
 
     const handleFilter = (e) => {
         const target = e.target.value;
-        console.log(target);
 
         switch (target) {
             case "rating":

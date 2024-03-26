@@ -34,7 +34,7 @@
     },
     {
         "bookId": 3,
-        "bookName": "The Da Vinci Code",
+        "bookName": "1984",
         "author": "Dan Brown",
         "image": "https://i.ibb.co/f1CG7Z6/julia-kicova-g827-ZOCwt30-unsplash.jpg",
         "review": "George Orwell's '1984' presents a chilling dystopian vision of a totalitarian regime where individuality is suppressed, and truth is distorted by those in power. Set in a future world of perpetual war and omnipresent surveillance, the novel follows Winston Smith, a disillusioned member of the Party who dares to rebel against its oppressive rule. Through Winston's struggle for freedom and truth, Orwell explores the dangers of authoritarianism and the manipulation of language and reality. '1984' remains a haunting warning against the erosion of civil liberties and the perversion of truth in the pursuit of absolute power.",
@@ -82,7 +82,7 @@
     },
     {
         "bookId": 6,
-        "bookName": "Harry Potter and the Philosopher's Stone",
+        "bookName": "Harry Potter",
         "author": "J.K. Rowling",
         "image": "https://i.ibb.co/FBsDCwv/dollar-gill-0-V7-N62z-Zc-U-unsplash.jpg",
         "review": "J.K. Rowling's 'Harry Potter and the Philosopher's Stone' casts a spellbinding enchantment on readers, introducing them to a magical world brimming with wonder, adventure, and friendship. Follow young Harry Potter as he discovers his true identity as a wizard and embarks on a journey to Hogwarts School of Witchcraft and Wizardry. Alongside his loyal friends Ron and Hermione, Harry uncovers the mysteries of his past and confronts the dark forces threatening the wizarding world. With its captivating storytelling and richly imagined universe, 'Harry Potter and the Philosopher's Stone' is a spellbinding tale that continues to inspire readers of all ages.",
