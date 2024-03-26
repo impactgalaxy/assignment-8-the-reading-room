@@ -14,7 +14,7 @@ export default function ReadingData({ reads }) {
     const { image, bookName, author, category, tags, totalPages, publisher, yearOfPublishing, rating } = reads || {};
 
     return (
-        <Card className="w-full  flex-row py-4 lg:p-8 items-center">
+        <Card className="w-full  flex-row py-4 lg:p-8 items-center mb-4">
             <CardHeader
                 shadow={false}
                 floated={false}
@@ -27,25 +27,25 @@ export default function ReadingData({ reads }) {
                 />
             </CardHeader>
             <CardBody>
-                <Typography variant="h4" color="blue-gray" className="mb-2">
+                <Typography variant="h4" color="blue-gray" className="mb-1">
                     {bookName}
                 </Typography>
-                <Typography color="gray" className="mb-8 font-normal">
+                <Typography color="gray" className="mb-2 font-normal">
                     <span className="text-black">By:</span> {author}
                 </Typography>
-                <div className="flex gap-4 items-center">
+                <div className="flex flex-col lg:flex-row gap-2 lg:items-center">
                     <p className="text-lg font-bold text-black">Tag</p>
                     {
                         tags.map((tag, i) => <p className="text-light-blue-500" key={i}>#{tag}</p>)
                     }
                     <p className="flex items-center gap-2"><MdPublic></MdPublic>Year of Publishing <span className="text-black">{yearOfPublishing}</span></p>
                 </div>
-                <div className="flex gap-6 items-center border-b p-3">
+                <div className="flex flex-col lg:flex-row gap-4 lg:items-center border-b py-5">
                     <span className="flex gap-2 items-center"><IoPeopleSharp></IoPeopleSharp> Publisher: {publisher}</span>
                     <span className="flex gap-2 items-center"><LuBookCopy></LuBookCopy>Pages: {totalPages}</span>
 
                 </div>
-                <div className="flex items-center gap-5 mt-6">
+                <div className="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-5 mt-6">
                     <Button variant="filled" color="blue" className="flex items-center gap-2">
                         Category: {category}
                     </Button>
