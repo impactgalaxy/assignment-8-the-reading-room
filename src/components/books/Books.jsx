@@ -13,9 +13,7 @@ export default function Books() {
                 setBooks(data);
                 setSpinner(true);
             });
-
-
-    }, [])
+    }, []);
     return (
         <div className="container m-auto p-2 lg:p-4 rounded-lg">
             <div className="text-center p-6">

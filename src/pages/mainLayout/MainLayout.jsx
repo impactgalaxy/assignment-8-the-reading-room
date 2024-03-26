@@ -4,8 +4,10 @@ import { StickyNavbar } from "../../components/navBar/NavBar";
 export default function MainLayout() {
     return (
         <>
-            <StickyNavbar></StickyNavbar>
             <div>
+                <StickyNavbar></StickyNavbar>
+            </div>
+            <div className="lg:mt-20">
                 <Outlet></Outlet>
             </div>
 

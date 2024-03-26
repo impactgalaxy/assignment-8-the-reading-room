@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 export default function Book({ books }) {
     const { bookName, image, author, category, rating, tags, bookId } = books || {};
     const card = <Card >
-        <CardHeader floated={false} color="blue-gray " className="flex-grow">
+        <CardHeader floated={false} className="flex-grow">
             <img
                 src={image}
                 alt={bookName}

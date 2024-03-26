@@ -4,12 +4,16 @@ import {
     Button,
 } from "@material-tailwind/react";
 import PropTypes from "prop-types";
-import { saveDataToLS } from "../../utility/Utility";
+import { saveDataToLS, saveDataToLSByWishlist } from "../../utility/Utility";
 export function BookReview({ books }) {
-    const { image, bookName, author, review, category, tags, totalPages, publisher, yearOfPublishing, rating, id } = books || {};
+    const { image, bookName, author, review, category, tags, totalPages, publisher, yearOfPublishing, rating, bookId } = books || {};
 
     const handleRead = () => {
-        saveDataToLS(parseInt(id));
+        console.log("Handle read button clicked");
+        saveDataToLS(parseInt(bookId));
+    }
+    const handleWishlist = () => {
+        saveDataToLSByWishlist(parseInt(bookId))
     }
     return (
         <Card className="flex flex-col lg:flex-row container m-auto p-4 lg:p-10 lg:*:w-1/2">
@@ -20,7 +24,7 @@ export function BookReview({ books }) {
                 <img
                     src={image}
                     alt={bookName}
-                    className="h-full w-full object-cover"
+                    className="h-60 lg:h-full w-full object-cover"
                 />
             </div>
             <div className="p-4 lg:px-10 flex flex-col gap-3">
@@ -60,7 +64,7 @@ export function BookReview({ books }) {
                     <Button onClick={handleRead} variant="outlined" color="green" className="flex items-center gap-2">
                         Read
                     </Button>
-                    <Button variant="filled" color="blue" className="flex items-center gap-2">
+                    <Button onClick={handleWishlist} variant="filled" color="blue" className="flex items-center gap-2">
                         Wishlist
                     </Button>
                 </div>
