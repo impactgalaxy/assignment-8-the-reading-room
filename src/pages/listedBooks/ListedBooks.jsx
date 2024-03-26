@@ -23,21 +23,37 @@ export default function ListedBooks() {
         setReadData(readingData);
         setFilterReading(readingData);
         setWishData(wishlistData);
+        setFilterWishlist(wishlistData);
 
     }, [originalData]);
     const copyData = [...readData];
+    const copyWishlistData = [...wishData];
+
     const handleFilter = (e) => {
         const target = e.target.value;
         console.log(target);
+
         switch (target) {
             case "rating":
-                const filterRating = copyData.sort((a, b) => b.rating - a.rating)
-                setFilterReading(filterRating);
+                {
+                    const filterRating = copyData.sort((a, b) => b.rating - a.rating)
+                    const filterWishlistRating = copyWishlistData.sort((a, b) => b.rating - a.rating)
+                    setFilterReading(filterRating);
+                    setFilterWishlist(filterWishlistRating);
+                    break;
+                }
             case "page":
-                const filterPage = copyData.sort((a, b) => b.totalPages - a.totalPages)
-                setFilterReading(filterPage);
+                {
+                    const filterPage = copyData.sort((a, b) => b.totalPages - a.totalPages)
+                    const filterWishlistPage = copyWishlistData.sort((a, b) => b.totalPages - a.totalPages)
+                    setFilterReading(filterPage);
+                    setFilterWishlist(filterWishlistPage);
+                    break;
+                }
             default:
                 setFilterReading(copyData);
+                setFilterWishlist(copyWishlistData);
+                break;
 
         }
 
@@ -65,7 +81,7 @@ export default function ListedBooks() {
                         {filterReading.map(item => <ReadingData key={item.bookId} reads={item}></ReadingData>)}
                     </TabPanel>
                     <TabPanel>
-                        {wishData.map((item, idx) => <ReadingData key={idx} reads={item}></ReadingData>)}
+                        {filterWishlist.map((item, idx) => <ReadingData key={idx} reads={item}></ReadingData>)}
                     </TabPanel>
                 </Tabs>
             </div>

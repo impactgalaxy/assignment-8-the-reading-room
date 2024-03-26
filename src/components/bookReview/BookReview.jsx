@@ -5,15 +5,16 @@ import {
 } from "@material-tailwind/react";
 import PropTypes from "prop-types";
 import { saveDataToLS, saveDataToLSByWishlist } from "../../utility/Utility";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 export function BookReview({ books }) {
     const { image, bookName, author, review, category, tags, totalPages, publisher, yearOfPublishing, rating, bookId } = books || {};
 
     const handleRead = () => {
-        console.log("Handle read button clicked");
-        saveDataToLS(parseInt(bookId));
+        saveDataToLS(parseInt(bookId), toast);
     }
     const handleWishlist = () => {
-        saveDataToLSByWishlist(parseInt(bookId))
+        saveDataToLSByWishlist(parseInt(bookId), toast)
     }
     return (
         <Card className="flex flex-col lg:flex-row container m-auto p-4 lg:p-10 lg:*:w-1/2">
@@ -26,6 +27,8 @@ export function BookReview({ books }) {
                     alt={bookName}
                     className="h-60 lg:h-full w-full object-cover"
                 />
+                <ToastContainer></ToastContainer>
+
             </div>
             <div className="p-4 lg:px-10 flex flex-col gap-3">
                 <Typography variant="h4" color="blue-gray" >
@@ -69,6 +72,7 @@ export function BookReview({ books }) {
                     </Button>
                 </div>
             </div>
+
         </Card>
     );
 }
