@@ -4,6 +4,8 @@ import { getDataFromLS, getDataFromLSByWishlist } from "../../utility/Utility";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import ReadingData from "../../components/readingData/ReadingData";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function ListedBooks() {
     const [readData, setReadData] = useState([]);
@@ -30,6 +32,11 @@ export default function ListedBooks() {
 
     const handleFilter = (e) => {
         const target = e.target.value;
+        if (target && target !== "Filter By") {
+            toast.success(`You successfully sorted by ${target}`)
+        } else {
+            toast.error(`Sorry! Can't sorted by ${target}`)
+        }
 
         switch (target) {
             case "rating":
@@ -58,6 +65,7 @@ export default function ListedBooks() {
     }
     return (
         <div className="bg-gray-200">
+            <ToastContainer></ToastContainer>
             <div className="p-5 lg:p-10 text-center bg-blue-gray-300">
                 <h1 className="text-4xl font-black">BOOK</h1>
             </div>
