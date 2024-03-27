@@ -1,8 +1,8 @@
 # The Reading Room
 This is name of my simple website that I was created. _I am front-End and Back-End web developer_
-# Creator of this site
+### Creator of this site
 > Nur Mohammad Palash
-# Link
+## Link
 ## You can easily find on
 [surge](https://assignment-8-the-reading-room.surge.sh/)
 or
@@ -16,7 +16,7 @@ or
 - Uses local Storage to save data 
 
 
-## I have used to make this site
+## I used to make this site
 - React
 - React-router-dom
 - Material tailwind
@@ -43,7 +43,7 @@ or
 # What I do
 ## Navbar: 
 A navbar on my website name on the left side & 5 menu
-items in the middle: Home, All Books Listed Books, and Pages to Read, Buy and two
+items in the middle: Home, All Books, Listed Books, Pages to Read, Buy and two
 buttons named “Sign In” and “Sign Up”.I apply the Active route on the navbar and the
 navbar will be displayed on all pages.
 ## Banner: 
@@ -52,7 +52,7 @@ List” below the title on the left side. On the right side added an image.
 ## Books Card:
 This section contains 6 cards of books, which are
 arranged according to Figma.
-Each card will contain-
+Each card contains-
 - image
 - tags
 - bookName
@@ -113,8 +113,8 @@ the “Wishlist” button for further.
 - And many more.
 ## I hope you are interested to see the live of the page
 Don't worry just click on the link 
-[](https://assignment-8-the-reading-room.surge.sh/)
+[surge]("https://assignment-8-the-reading-room.surge.sh/")
 Or 
-[](https://assignment-8-the-reading-room.netlify.app/)
+[netlify]("https://assignment-8-the-reading-room.netlify.app/")
 
 
