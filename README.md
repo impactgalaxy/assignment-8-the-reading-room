@@ -5,8 +5,9 @@ This is a simple website that I was created. I am front-End and Back-End web dev
 [NurMohammadPalash] creator of this site
 # Link
 ## You can easily find on
-[surge]url("https://assignment-8-the-reading-room.surge.sh/")
-[netlify]url("https://assignment-8-the-reading-room.netlify.app/")
+-[surge](https://assignment-8-the-reading-room.surge.sh/)
+or
+-[netlify](https://assignment-8-the-reading-room.netlify.app/)
 # Features
 - This site mainly uses of React and React-router-dom
 - This is a book reviewer page named _The Reading Room_
