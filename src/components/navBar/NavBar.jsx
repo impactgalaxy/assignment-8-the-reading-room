@@ -26,7 +26,7 @@ export default function NavBar() {
                 </ul>
             </div>
             <div className="navbar-end space-x-4">
-                <a className="btn btn-outline">Sign Up</a>
+                <a className="btn btn-outline hidden lg:flex">Sign Up</a>
                 <a className="btn btn-primary">Sign In</a>
             </div>
         </div>

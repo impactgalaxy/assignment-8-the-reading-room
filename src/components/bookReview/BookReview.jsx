@@ -47,7 +47,7 @@ export function BookReview({ books }) {
                     <p className="text-black font-bold">Tag</p>
                     {tags.map((text, idx) => <span className="text-green-800" key={idx}>#{text}</span>)}
                 </div>
-                <div className="flex w-3/4 items-center gap-5">
+                <div className="flex lg:w-3/4 items-center gap-5 justify-between border">
                     <div>
                         <p>Number of Pages</p>
                         <p >Publisher</p>

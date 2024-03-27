@@ -13,19 +13,18 @@ import PropTypes from "prop-types";
 export default function ReadingData({ reads }) {
     const { image, bookName, author, category, tags, totalPages, publisher, yearOfPublishing, rating } = reads || {};
     const keys = Object.keys(reads);
-    console.log(keys.length);
 
     return (
 
         <div>
             {
                 keys.length ?
-                    <Card className="w-full  flex-row py-4 lg:p-8 items-center mb-4">
+                    <Card className="w-full flex-col lg:flex-row py-4 lg:p-8 items-center mb-4">
 
                         <CardHeader
                             shadow={false}
                             floated={false}
-                            className="m-0 w-2/5 rounded-r-none"
+                            className="m-0 lg:w-2/5 lg:rounded-r-none w-full"
                         >
                             <img
                                 src={image}
@@ -33,7 +32,7 @@ export default function ReadingData({ reads }) {
                                 className="h-56 w-full object-cover m-auto block"
                             />
                         </CardHeader>
-                        <CardBody>
+                        <CardBody className="border w-full">
                             <Typography variant="h4" color="blue-gray" className="mb-1">
                                 {bookName}
                             </Typography>

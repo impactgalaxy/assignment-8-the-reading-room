@@ -29,7 +29,6 @@ export default function PagesToRead() {
         const myData1 = loader.filter(item => d.includes(item.bookId));
         setReadingPage(myData1);
     }, [loader]);
-    console.log(loader.length);
     return (
         <div className='h-[calc(100%-100px)] flex items-center justify-center'>
             {

@@ -8,11 +8,10 @@ export default function MainLayout() {
             <div>
                 <NavBar></NavBar>
             </div>
-            <div className="lg:mt-20">
+            <div className="lg:mt-16">
                 <Outlet></Outlet>
             </div>
             <Footer></Footer>
-
         </>
     )
 }

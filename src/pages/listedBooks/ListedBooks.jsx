@@ -32,11 +32,13 @@ export default function ListedBooks() {
 
     const handleFilter = (e) => {
         const target = e.target.value;
+
         if (target && target !== "Filter By") {
             toast.success(`You successfully sorted by ${target}`)
         } else {
             toast.error(`Sorry! Can't sorted by ${target}`)
         }
+
 
         switch (target) {
             case "rating":
@@ -64,12 +66,12 @@ export default function ListedBooks() {
 
     }
     return (
-        <div className="bg-gray-200">
+        <div className="bg-gray-100 p-5">
             <ToastContainer></ToastContainer>
-            <div className="p-5 lg:p-10 text-center bg-blue-gray-300">
-                <h1 className="text-4xl font-black">BOOK</h1>
+            <div className="pt-20 lg:pt-0 text-center">
+                <h1 className="text-4xl font-black">BOOKS</h1>
             </div>
-            <div className="lg:w-1/2 m-auto p-4 lg:p-8 border flex items-center justify-center  rounded-2xl">
+            <div className="lg:w-1/2 m-auto p-4 lg:p-8 flex items-center justify-center  rounded-2xl">
                 <select className="lg:w-1/3 p-3" onChange={handleFilter}>
                     <option>Filter By</option>
                     <option value="all">All</option>
@@ -77,16 +79,22 @@ export default function ListedBooks() {
                     <option value="page">Pages</option>
                 </select>
             </div>
-            <div className="container m-auto lg:p-10 border-2">
+            <div className="container m-auto lg:p-10">
                 <Tabs>
                     <TabList>
                         <Tab>Read Books</Tab>
                         <Tab>Wishlist Books</Tab>
                     </TabList>
                     <TabPanel>
+                        {
+                            (filterReading.length === 0) ? <div className="h-400px"> No Data Found</div> : ""
+                        }
                         {filterReading.map(item => <ReadingData key={item.bookId} reads={item}></ReadingData>)}
                     </TabPanel>
                     <TabPanel>
+                        {
+                            (filterWishlist.length === 0) ? <div className="h-[400px]  p-5"> No Data Found</div> : ""
+                        }
                         {filterWishlist.map((item, idx) => <ReadingData key={idx} reads={item}></ReadingData>)}
                     </TabPanel>
                 </Tabs>
