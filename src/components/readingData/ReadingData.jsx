@@ -33,7 +33,7 @@ export default function ReadingData({ reads }) {
                                 className="h-56 w-full object-cover m-auto block"
                             />
                         </CardHeader>
-                        <CardBody className="border w-full">
+                        <CardBody className="w-full">
                             <Typography variant="h4" color="blue-gray" className="mb-1">
                                 {bookName}
                             </Typography>

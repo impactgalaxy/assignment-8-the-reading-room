@@ -13,6 +13,7 @@ export default function NavBar() {
                         <NavLink to="/all-books" className={({ isActive }) => isActive ? "text-teal-700 font-black" : ""}>All Books</NavLink>
                         <NavLink to="/listed-books" className={({ isActive }) => isActive ? "text-teal-700 font-black" : ""}>Listed Books</NavLink>
                         <NavLink to="/pages-to-read" className={({ isActive }) => isActive ? "text-teal-700 font-black" : ""}>Pages to Read</NavLink>
+                        <NavLink to="/buy" className={({ isActive }) => isActive ? "text-teal-700 font-black" : ""}>Buy</NavLink>
                     </ul>
                 </div>
                 <Link to="/" className="btn btn-ghost text-xl">The Reading Room</Link>
@@ -23,6 +24,7 @@ export default function NavBar() {
                     <NavLink to="/all-books" className={({ isActive }) => isActive ? "text-teal-700 font-black " : ""}>All Books</NavLink>
                     <NavLink to="/listed-books" className={({ isActive }) => isActive ? "text-teal-700 font-black" : ""}>Listed Books</NavLink>
                     <NavLink to="/pages-to-read" className={({ isActive }) => isActive ? "text-teal-700 font-black" : ""}>Pages to Read</NavLink>
+                    <NavLink to="/buy" className={({ isActive }) => isActive ? "text-teal-700 font-black" : ""}>Buy</NavLink>
                 </ul>
             </div>
             <div className="navbar-end space-x-4">

@@ -16,7 +16,7 @@ export function BookReview({ books }) {
         saveDataToLSByWishlist(parseInt(bookId), toast)
     }
     return (
-        <Card className="flex flex-col lg:flex-row container m-auto p-4 lg:p-10 lg:*:w-1/2">
+        <Card className="flex flex-col lg:flex-row container m-auto mt-4 p-4 lg:p-10 lg:*:w-1/2 bg-neutral-100">
             <div
 
                 className="m-0 rounded-xl w-full"
