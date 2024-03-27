@@ -9,9 +9,10 @@ import { MdPublic } from "react-icons/md";
 import { IoPeopleSharp } from "react-icons/io5";
 import { LuBookCopy } from "react-icons/lu";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 export default function ReadingData({ reads }) {
-    const { image, bookName, author, category, tags, totalPages, publisher, yearOfPublishing, rating } = reads || {};
+    const { bookId, image, bookName, author, category, tags, totalPages, publisher, yearOfPublishing, rating } = reads || {};
     const keys = Object.keys(reads);
 
     return (
@@ -58,9 +59,9 @@ export default function ReadingData({ reads }) {
                                 <Button variant="filled" color="amber" className="flex items-center gap-2">
                                     Rating {rating}
                                 </Button>
-                                <Button variant="filled" color="green" className="flex items-center gap-2">
+                                <Link to={`/all-books/${bookId}`} className="btn btn-success">
                                     View Details
-                                </Button>
+                                </Link>
                             </div>
                         </CardBody>
                     </Card> : <div className="h-28 text-center"><h1 className="text-5xl">No Data Found</h1></div>

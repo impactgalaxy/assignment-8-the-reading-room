@@ -1,7 +1,6 @@
 import {
     Card,
     Typography,
-    Button,
 } from "@material-tailwind/react";
 import PropTypes from "prop-types";
 import { saveDataToLS, saveDataToLSByWishlist } from "../../utility/Utility";
@@ -47,7 +46,7 @@ export function BookReview({ books }) {
                     <p className="text-black font-bold">Tag</p>
                     {tags.map((text, idx) => <span className="text-green-800" key={idx}>#{text}</span>)}
                 </div>
-                <div className="flex lg:w-3/4 items-center gap-5 justify-between border">
+                <div className="flex lg:w-4/5 items-center gap-5 justify-between">
                     <div>
                         <p>Number of Pages</p>
                         <p >Publisher</p>
@@ -64,12 +63,12 @@ export function BookReview({ books }) {
 
                 </div>
                 <div className="flex gap-4 ">
-                    <Button onClick={handleRead} variant="outlined" color="green" className="flex items-center gap-2">
+                    <button onClick={handleRead} className="btn btn-accent">
                         Read
-                    </Button>
-                    <Button onClick={handleWishlist} variant="filled" color="blue" className="flex items-center gap-2">
+                    </button>
+                    <button onClick={handleWishlist} className="btn btn-outline">
                         Wishlist
-                    </Button>
+                    </button>
                 </div>
             </div>
 

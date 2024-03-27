@@ -57,6 +57,14 @@ export default function ListedBooks() {
                     setFilterWishlist(filterWishlistPage);
                     break;
                 }
+            case "publishYear":
+                {
+                    const filterPage = copyData.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing)
+                    const filterWishlistPage = copyWishlistData.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing)
+                    setFilterReading(filterPage);
+                    setFilterWishlist(filterWishlistPage);
+                    break;
+                }
             default:
                 setFilterReading(copyData);
                 setFilterWishlist(copyWishlistData);
@@ -76,7 +84,8 @@ export default function ListedBooks() {
                     <option>Filter By</option>
                     <option value="all">All</option>
                     <option value="rating">Rating</option>
-                    <option value="page">Pages</option>
+                    <option value="page">Number of pages</option>
+                    <option value="publishYear">Published year</option>
                 </select>
             </div>
             <div className="container m-auto lg:p-10">
@@ -87,7 +96,7 @@ export default function ListedBooks() {
                     </TabList>
                     <TabPanel>
                         {
-                            (filterReading.length === 0) ? <div className="h-400px"> No Data Found</div> : ""
+                            (filterReading.length === 0) ? <div className="h-[400px] p-5"> No Data Found</div> : ""
                         }
                         {filterReading.map(item => <ReadingData key={item.bookId} reads={item}></ReadingData>)}
                     </TabPanel>

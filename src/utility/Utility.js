@@ -12,9 +12,9 @@ const saveDataToLS = (id, toast) => {
     if (!isExist) {
         data.push(id);
         localStorage.setItem("read-item", JSON.stringify(data));
-        toast.success("Congratulations! you complete this book");
+        toast.success("Congratulations! You have completed this book");
     } else {
-        toast.error("Sorry! You already finished this book");
+        toast.error("It's already been added");
     }
 }
 const saveDataToLSByWishlist = (id, toast) => {
