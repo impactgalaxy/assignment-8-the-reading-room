@@ -16,7 +16,7 @@ export default function Books() {
     }, []);
     return (
         <div className="container m-auto p-2 lg:p-4 rounded-lg">
-            <div className="text-center pt-20 lg:p-6">
+            <div className="text-center p-6">
                 <h1 className="text-6xl font-black">Books</h1>
             </div>
             {!spinner ? <CustomSpinner></CustomSpinner> :

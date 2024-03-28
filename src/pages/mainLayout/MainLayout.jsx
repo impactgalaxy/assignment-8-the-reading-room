@@ -8,7 +8,7 @@ export default function MainLayout() {
             <div>
                 <NavBar></NavBar>
             </div>
-            <div className="lg:mt-16">
+            <div className="mt-16">
                 <Outlet></Outlet>
             </div>
             <Footer></Footer>

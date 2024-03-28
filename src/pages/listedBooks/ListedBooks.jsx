@@ -75,7 +75,7 @@ export default function ListedBooks() {
     return (
         <div className="bg-gray-100 p-5">
             <ToastContainer></ToastContainer>
-            <div className="pt-20 lg:pt-0 text-center">
+            <div className="text-center">
                 <h1 className="text-4xl font-black">BOOKS</h1>
             </div>
             <div className="lg:w-1/2 m-auto p-4 lg:p-8 flex items-center justify-center  rounded-2xl">

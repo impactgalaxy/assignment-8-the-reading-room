@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function BuyBook({ data }) {
     const { image, bookName, bookId } = data;
     return (
-        <Link to={`/all-books/${bookId}`} className="h-64 p-3 shadow-md lg:w-44">
+        <Link to={`/all-books/${bookId}`} className="h-64 p-3 shadow-md w-52">
             <div className="h-40">
                 <img src={image} alt="" className="h-40 w-full object-cover" />
             </div>
