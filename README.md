@@ -113,8 +113,8 @@ the “Wishlist” button for further.
 - And many more.
 ## I hope you are interested to see the live of the page
 Don't worry just click on the link 
-[surge]("https://assignment-8-the-reading-room.surge.sh/")
+[surge](https://assignment-8-the-reading-room.surge.sh/)
 Or 
-[netlify]("https://assignment-8-the-reading-room.netlify.app/")
+[netlify](https://assignment-8-the-reading-room.netlify.app/)
 
 

@@ -32,14 +32,13 @@ export default function ListedBooks() {
 
     const handleFilter = (e) => {
         const target = e.target.value;
+        if (target !== "Filter By") {
+            toast.success(`You successfully sorted by ${target}`);
 
-        if (target && target !== "Filter By") {
-            toast.success(`You successfully sorted by ${target}`)
-        } else {
-            toast.error(`Sorry! Can't sorted by ${target}`)
         }
-
-
+        else {
+            toast.error(`Sorry! Can't sorted by ${target}`);
+        }
         switch (target) {
             case "rating":
                 {
@@ -55,6 +54,7 @@ export default function ListedBooks() {
                     const filterWishlistPage = copyWishlistData.sort((a, b) => b.totalPages - a.totalPages)
                     setFilterReading(filterPage);
                     setFilterWishlist(filterWishlistPage);
+
                     break;
                 }
             case "publishYear":
@@ -69,10 +69,9 @@ export default function ListedBooks() {
                 setFilterReading(copyData);
                 setFilterWishlist(copyWishlistData);
                 break;
-
         }
-
     }
+
     return (
         <div className="bg-gray-100 p-5">
             <ToastContainer></ToastContainer>

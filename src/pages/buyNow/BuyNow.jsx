@@ -18,7 +18,7 @@ export default function BuyNow() {
                 <div>
                     <div className="bg-white p-5">
                         <div className="flex items-center gap-4 border-b-2">
-                            <h1 className="text-2xl text-orange-600">On sell now</h1>
+                            <h1 className="lg:text-2xl text-orange-600">On sell now</h1>
                             <h1>Ending In</h1>
                             <div className="btn">00</div>
                             <div className="btn">00</div>
